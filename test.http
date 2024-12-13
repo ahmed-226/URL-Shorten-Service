@@ -1,0 +1,13 @@
+### Test the root endpoint
+GET http://localhost:3000
+
+### Test the shorten URL endpoint
+POST http://localhost:3000/api/shorten
+Content-Type: application/json
+
+{
+  "longUrl": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+}
+
+### Test the redirect to long URL endpoint
+GET http://localhost:3000/api/a65debc
